@@ -73,6 +73,35 @@
         </div>
 
         <label class="container">
+            <input type="radio" id="debian" name="os">
+            <span class="checkmark"></span>
+            <p id="text">Debian</p>
+        </label>
+
+        <div class="nested" id="debian-nested">
+            <label class="container">
+                <input type="checkbox" id="debianFastFetch">
+                <span class="checkmark"></span>
+                <p id="text">FastFetch</p>
+            </label>
+            <label class="container">
+                <input type="checkbox" id="debianFireFox">
+                <span class="checkmark"></span>
+                <p id="text">FireFox</p>
+            </label>
+            <label class="container">
+                <input type="checkbox" id="debianNeoVim">
+                <span class="checkmark"></span>
+                <p id="text">NeoVim</p>
+            </label>
+            <label class="container">
+                <input type="checkbox" id="debianObsidian">
+                <span class="checkmark"></span>
+                <p id="text">Obsidian</p>
+            </label> 
+        </div>
+
+        <label class="container">
             <input type="radio" id="ubuntu" name="os">
             <span class="checkmark"></span>
             <p id="text">Ubuntu</p>
@@ -99,38 +128,8 @@
                 <span class="checkmark"></span>
                 <p id="text">Obsidian</p>
             </label>
- 
         </div>
-
-        <label class="container">
-            <input type="radio" id="debian" name="os">
-            <span class="checkmark"></span>
-            <p id="text">Debian</p>
-        </label>
-
-        <div class="nested" id="debian-nested">
-            <label class="container">
-                <input type="checkbox" id="debianFastFetch">
-                <span class="checkmark"></span>
-                <p id="text">FastFetch</p>
-            </label>
-            <label class="container">
-                <input type="checkbox" id="debianFireFox">
-                <span class="checkmark"></span>
-                <p id="text">FireFox</p>
-            </label>
-            <label class="container">
-                <input type="checkbox" id="debianNeoVim">
-                <span class="checkmark"></span>
-                <p id="text">NeoVim</p>
-            </label>
-            <label class="container">
-                <input type="checkbox" id="debianObsidian">
-                <span class="checkmark"></span>
-                <p id="text">Obsidian</p>
-            </label>
- 
-        </div>
+    
     </div>
     <label class="container">
         <button type="button" class="submit" id="submit">Boot</button>

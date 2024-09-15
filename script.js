@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 } else if (selectedOS == "preDebianPC"){
                     selectedOptions.push("debianNeoVim", "debianObsidian", "debianSteam", "debianVSCode");
                 } else if (selectedOS == "preDebianServer"){
-                    selectedOptions.push("debianXfce", "debianMoreutils", "debianTmux", "debianPcdump");
+                    selectedOptions.push("debianXfce", "debianSsh", "debianTmux", "debianPcdump");
                 }
                 sessionStorage.setItem('selectedOS', selectedOS);
                 sessionStorage.setItem('selectedOptions', JSON.stringify(selectedOptions));
