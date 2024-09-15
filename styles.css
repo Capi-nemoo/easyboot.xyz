@@ -44,7 +44,8 @@ button {
   position: absolute;
   right: 0; 
   bottom: 0;
-  color:#33FF00
+  color:#33FF00;
+  padding-right: 8px;
 }
 /* help from w3schools for custom checkboxes */
 
