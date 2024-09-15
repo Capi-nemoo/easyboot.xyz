@@ -9,7 +9,7 @@ h1 {
   width:fit-content;
 }
 
-p {
+p, span {
     color: #33FF00;
     size: 30px;
 }
@@ -19,6 +19,11 @@ button {
     size: 30px;
 }
 
+#logo{
+ position: absolute; 
+ right: 0; 
+top: 0;
+}
 /* help from w3schools for custom checkboxes */
 
 /* Create container for radios */
