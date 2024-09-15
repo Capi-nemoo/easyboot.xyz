@@ -15,12 +15,18 @@ a{
 
 #text {
     color: #33FF00;
-    size: 30px;
+}
+
+#category {
+    color: #33FF00;
+    font-size: 30px;
+    text-decoration: underline;
 }
 
 button {
     color: #33FF00;
     size: 30px;
+    cursor: pointer;
 }
 
 #logo{

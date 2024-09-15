@@ -26,11 +26,22 @@
     <p id="rights">art from emojicombos.com</p>
 
     <div class="checkbox-tree">
+
+        <p id="category">Prebuilds</p>
+
         <label class="container">
-            <input type="radio" id="recommended" name="os" checked="checked">
+            <input type="radio" id="preDebianPC" name="os" checked="checked">
             <span class="checkmark"></span>
-            <p id="text">Recommended</p>
+            <p id="text">Debian_PC</p>
         </label>
+
+        <label class="container">
+            <input type="radio" id="preDebianServer" name="os">
+            <span class="checkmark"></span>
+            <p id="text">Debian_Server</p>
+        </label>
+        
+        <p id="category">Custom</p>
 
         <label class="container">
             <input type="radio" id="arch" name="os">
@@ -40,22 +51,22 @@
         
         <div class="nested" id="arch-nested">
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="archFastFetch">
                 <span class="checkmark"></span>
                 <p id="text">FastFetch</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="archFireFox">
                 <span class="checkmark"></span>
                 <p id="text">FireFox</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="archNeoVim">
                 <span class="checkmark"></span>
                 <p id="text">NeoVim</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="archObsidian">
                 <span class="checkmark"></span>
                 <p id="text">Obsidian</p>
             </label>
@@ -69,22 +80,22 @@
 
         <div class="nested" id="ubuntu-nested">
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="ubuntuFastFetch">
                 <span class="checkmark"></span>
                 <p id="text">FastFetch</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="ubuntuFastFetch">
                 <span class="checkmark"></span>
                 <p id="text">FireFox</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="ubuntuNeoVim">
                 <span class="checkmark"></span>
                 <p id="text">NeoVim</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="ubuntuObsidian">
                 <span class="checkmark"></span>
                 <p id="text">Obsidian</p>
             </label>
@@ -99,22 +110,22 @@
 
         <div class="nested" id="debian-nested">
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="debianFastFetch">
                 <span class="checkmark"></span>
                 <p id="text">FastFetch</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="debianFireFox">
                 <span class="checkmark"></span>
                 <p id="text">FireFox</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="debianNeoVim">
                 <span class="checkmark"></span>
                 <p id="text">NeoVim</p>
             </label>
             <label class="container">
-                <input type="checkbox">
+                <input type="checkbox" id="debianObsidian">
                 <span class="checkmark"></span>
                 <p id="text">Obsidian</p>
             </label>
@@ -123,7 +134,7 @@
     </div>
     <label class="container">
         <a href="search.html">
-            <button type="button" class="submit">Boot</button>
+            <button type="button" class="submit" id="submit">Boot</button>
         </a>
     </label>
 
