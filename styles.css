@@ -44,6 +44,7 @@ button {
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
+  width: 50px;
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
