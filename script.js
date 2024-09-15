@@ -27,6 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
                     activeNested.querySelectorAll('input[type="checkbox"]:checked').forEach(checkbox => {
                         selectedOptions.push(checkbox.id);
                     });
+                } else if (selectedOS == "preDebianPC"){
+                    selectedOptions.push("debianNeoVim", "debianObsidian", "debianSteam", "debianVSCode");
+                } else if (selectedOS == "preDebianServer"){
+                    selectedOptions.push("debianXfce", "debianMoreutils", "debianTmux", "debianPcdump");
                 }
                 sessionStorage.setItem('selectedOS', selectedOS);
                 sessionStorage.setItem('selectedOptions', JSON.stringify(selectedOptions));
