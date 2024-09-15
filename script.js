@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 sessionStorage.setItem('selectedOptions', JSON.stringify(selectedOptions));
                 console.log('Selected OS:', sessionStorage.getItem('selectedOS'));
                 console.log('Selected Options:', sessionStorage.getItem('selectedOptions'));
-                setTimeout(() => {window.location.href = 'search.html';}, 50);
+                window.location.href = 'search.html';
             });
         }
     }
