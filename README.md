@@ -6,7 +6,8 @@ If you're interested in contributing, testing, or just following the progress, f
 
 ## EasyBoot.xyz
 
-EasyBoot.xyz aims to simplify the process of creating and installing custom Linux distributions, automating deployment via PXE boot and virtualization. The project integrates tools like **Netboot.xyz**, **iPXE**, and **Ventoy** to offer easy customization and installation options for both individual users and large-scale deployments.
+EasyBoot.xyz Besides being a personal project, this is also my first project in a hackathon !!! I started developing it with the collaboration of @Iuke-thrutchlley, and @GraysenGould (Graysen Gould). It aims to make installing and customizing Linux distributions less of a hassle. I got tired of setting up the same configs over and over, and thought there had to be an easier way to automate it—especially for people who manage multiple systems or just want a smoother experience. The idea is to automate deployments using PXE boot and virtualization. I’m using tools like Netboot.xyz, iPXE, and Ventoy to make customization and installation simpler for both everyday users and larger setups.
+
 
 ## Features
 - PXE boot server for automated OS deployment.
