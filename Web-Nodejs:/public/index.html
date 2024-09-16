@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat en tiempo real</title>
+  
+  <!-- Bootstrap CSS and Font Awesome -->
+  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+
+  <!-- jQuery and Bootstrap JS -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="/styles.css">
+  <style>
+    body {
+      background-color: #f2f2f2;
+    }
+    .messaging {
+      margin: 0 auto;
+      max-width: 600px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .msg_history {
+      height: 300px;
+      overflow-y: auto;
+      padding: 10px;
+    }
+    .incoming_msg_img {
+      float: left;
+      width: 30px;
+    }
+    .received_msg {
+      display: inline-block;
+      width: 80%;
+    }
+    .received_withd_msg {
+      background: #ebebeb;
+      border-radius: 10px;
+      padding: 5px 10px;
+      margin-left: 40px;
+    }
+    .sent_msg {
+      background: #05728f;
+      border-radius: 10px;
+      padding: 5px 10px;
+      color: white;
+      margin-right: 10px;
+    }
+    .time_date {
+      font-size: 12px;
+      color: #747474;
+    }
+  </style>
+     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <h3 class="heading text-center">Chat en tiempo real</h3>
+    <div class="messaging">
+      <div class="msg_history" id="mensajes">
+        <!-- Messages will be displayed here -->
+      </div>
+      <div class="type_msg">
+        <div class="input_msg_write">
+          <input type="text" class="write_msg" id="mensaje" placeholder="Escribe un mensaje" autocomplete="off"/>
+          <button class="msg_send_btn" type="button" onclick="enviarMensaje()">Enviar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Socket.io -->
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+    const socket = io();
+
+    function enviarMensaje() {
+      const mensaje = document.getElementById('mensaje').value;
+      socket.emit('mensaje', mensaje);
+      document.getElementById('mensaje').value = '';
+    }
+
+    socket.on('mensaje', (data) => {
+      const li = document.createElement('div');
+      li.classList.add('outgoing_msg');
+      li.innerHTML = `<div class="sent_msg"><p>${data}</p><span class="time_date">${new Date().toLocaleTimeString()} | Hoy</span></div>`;
+      document.getElementById('mensajes').appendChild(li);
+    });
+
+    socket.on('mensaje_recibido', (data) => {
+      const li = document.createElement('div');
+      li.classList.add('incoming_msg');
+      li.innerHTML = `
+        <div class="incoming_msg_img"> 
+          <img src="https://ptetutorials.com/images/user-profile.png" alt="user"> 
+        </div>
+        <div class="received_msg">
+          <div class="received_withd_msg">
+            <p>${data}</p>
+            <span class="time_date">${new Date().toLocaleTimeString()} | Hoy</span>
+          </div>
+        </div>`;
+      document.getElementById('mensajes').appendChild(li);
+    });
+  </script>
+</body>
+
+</html>
+
