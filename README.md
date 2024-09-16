@@ -1,19 +1,10 @@
-#up.
-- [ ] Improve the web interface for easier use.
-- [ ] Add customization options for ISO installations.
-- [ ] Fully integrate Ansible (Not implemented yet).
-- [ ] Fix networking and DHCP issues.
+# Welcome to EasyBoot.xyz
 
-### Contributing
+First of all, a huge thank you to everyone who showed interest in **EasyBoot.xyz** during HackWest 2024! It was incredibly motivating to hear from so many of you who loved the concept and are excited to try it out or contribute. While the project is still in early development, I'm working hard to implement all the core features, and your support means a lot. 
 
-Feel free to contribute to the project by submitting issues or pull requests. Please follow the contribution guidelines.
+If you're interested in contributing, testing, or just following the progress, feel free to explore the repo, submit issues, or open a pull request. I can't wait to see where this project goes with the help of the amazing open-source community!
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-For questions or collaboration, feel free to reach out via email or open an issue in the repository.
- EasyBoot.xyz
+## EasyBoot.xyz
 
 EasyBoot.xyz aims to simplify the process of creating and installing custom Linux distributions, automating deployment via PXE boot and virtualization. The project integrates tools like **Netboot.xyz**, **iPXE**, and **Ventoy** to offer easy customization and installation options for both individual users and large-scale deployments.
 
@@ -26,7 +17,7 @@ EasyBoot.xyz aims to simplify the process of creating and installing custom Linu
 
 ### Prerequisites
 To set up **EasyBoot.xyz**, you'll need the following tools installed on your system:
-- **Node.js** (for the backend)
+- **Node.js** ()
 - **npm** (for package management)
 - **Docker** (for containerized services)
 - **Netboot.xyz** (for PXE booting)
