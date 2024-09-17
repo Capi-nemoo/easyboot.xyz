@@ -1,0 +1,114 @@
+body {
+  background-color: #000000;
+  font-family: 'Courier New', monospace;
+}
+
+h1 {
+  color: #33FF00;
+  outline: 3px solid #33FF00;
+  width:fit-content;
+ }
+
+a{
+  text-decoration: none;
+}
+
+#text {
+    color: #33FF00;
+}
+
+#output{
+  color:#33FF00;
+  width: 50%;
+}
+
+#category {
+    color: #33FF00;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+button {
+    color: #33FF00;
+    size: 30px;
+    cursor: pointer;
+}
+
+#logo{
+  position: absolute; 
+  color:#33FF00;
+  font-size: 10px;
+  right: 0; 
+  top: 0;
+}
+#rights{
+  position: absolute;
+  right: 0; 
+  bottom: 0;
+  color:#33FF00;
+  padding-right: 8px;
+}
+/* help from w3schools for custom checkboxes */
+
+/* Create container for radios */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox.radio */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox/radio */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #000000;
+  border-style: solid;
+  border-color: #33FF00;
+}
+
+/* When the checkbox/radio is checked, add a green background */
+.container input:checked ~ .checkmark {
+  background-color: #33FF00;
+}
+
+/* By default hide nested checkboxes */
+.nested {
+  display: none;
+  margin-left: 20px;
+}
+
+/* When active, show nested checkboxes */
+.nested.active {
+  display: block;
+}
+
+.submit {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 30px;
+  width: 100px;
+  background-color: #000000;
+  border-style: solid;
+  border-color: #33FF00;
+}
